@@ -9,20 +9,74 @@ ul{
 }
 #container{
     margin: 100px auto;
-    width: 70%;
+    width: 80%;
     background-color: antiquewhite;
+    max-width: 650px;
 }
 .card{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 .card li{
     display: flex;
     gap: 10px;
+    padding: 20px;
+    text-align: center;
 }
 .words{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 10px;
+}
+/* 너비가 768px */
+@media all and (max-width:768px) {
+    .card li{
+        gap: 5px;
+        color: red;
+        font-size: 14px;
+        flex-direction: column;
+        
+    }
+    #container{
+        margin: 100px auto;
+        width: 40%;
+        background-color: antiquewhite;
+        max-width: 650px;
+    }
+}
+/* 너비가 320px */
+/* color 검정 */
+/* 폰트 사이즈는 13px */
+/* 카드안에 있는 gap 10px */
+@media all and (max-width:320px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 13px;
+    }
+    .card li{
+        color: #000;
+        font-size: 13px;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .card li h2{
+        color: #000;
+        font-size: 13px;
+        flex-direction: column;
+    }
+    .card li h3{
+        color: #000;
+        font-size: 13px;
+        flex-direction: column;
+    }
+    #container{
+        margin: 100px auto;
+        width: 40%;
+        background-color: antiquewhite;
+        max-width: 320px;
+    }
 }
